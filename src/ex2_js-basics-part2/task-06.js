@@ -1,4 +1,4 @@
-function simpleOrCompound(num) {
+function primeNumTest(num) {
   const simple = `Число ${num} - простое число`;
   const notTrue = 'Данные неверны';
   const compound = `Число ${num} - составное число`;
@@ -25,4 +25,4 @@ function simpleOrCompound(num) {
   return notTrue;
 }
 
-module.exports = simpleOrCompound;
+module.exports = primeNumTest;

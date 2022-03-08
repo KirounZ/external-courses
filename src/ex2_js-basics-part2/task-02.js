@@ -3,7 +3,7 @@ function iteratingOverAnArray(arr) {
     console.log(item);
   });
 
-  console.log(Object.keys(arr).length);
+  console.log(arr.length);
 }
 
 module.exports = iteratingOverAnArray;

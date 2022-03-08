@@ -1,13 +1,13 @@
-function myVar(value) {
+function argType(value) {
   if (typeof value === 'string' || value instanceof String) {
-    return ('string');
+    return 'string';
   }
 
   if (Number.isInteger(value)) {
-    return ('number');
+    return 'number';
   }
 
-  return (undefined);
+  return undefined;
 }
 
-module.exports = myVar;
+module.exports = argType;

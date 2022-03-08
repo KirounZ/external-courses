@@ -1,7 +1,7 @@
 function listeArr(arr) {
-  let sumOdd = 0; // Нечетные
-  let sumPar = 0; // Четные
-  let sumNull = 0; // Нули
+  let sumOdd = 0;
+  let sumPar = 0;
+  let sumNull = 0;
 
   for (let i = 0; i < arr.length; i += 1) {
     if (Number.isInteger(arr[i])) {
@@ -15,9 +15,7 @@ function listeArr(arr) {
     }
   }
 
-  const arrOut = [sumPar, sumOdd, sumNull];
-
-  return arrOut;
+  return [sumPar, sumOdd, sumNull];
 }
 
 module.exports = listeArr;
