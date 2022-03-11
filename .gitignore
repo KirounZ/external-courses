@@ -4,3 +4,4 @@ Thumbs.db
 *.log*
 .idea
 .eslintcache
+package-lock.json
