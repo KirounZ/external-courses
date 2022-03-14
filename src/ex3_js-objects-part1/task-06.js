@@ -3,13 +3,14 @@ function getProperty(object, propertyPath) {
   let current = object;
 
   for (let i = 0; i < keys.length; i += 1) {
-    if (Object.hasOwn(current, keys[i])) {
+    if (Object.prototype.hasOwnProperty.call(current, keys[i])) {
       current = current[keys[i]];
     } else {
       current = undefined;
       break;
     }
   }
+
   return current;
 }
 

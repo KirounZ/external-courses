@@ -1,5 +1,6 @@
 function printObj(testObj) {
-  console.log(testObj);
+  console.log(Object.assign(testObj));
+
   return testObj;
 }
 

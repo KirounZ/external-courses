@@ -1,9 +1,5 @@
 function checkingForAProperty(inputString, passedObj) {
-  if (passedObj.hasOwnProperty(inputString)) {
-    return true;
-  }
-
-  return false;
+  return passedObj.hasOwnProperty(inputString);
 }
 
 module.exports = checkingForAProperty;

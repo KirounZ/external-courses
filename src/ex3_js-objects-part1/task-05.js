@@ -1,7 +1,5 @@
 function addNewProperty(objToCopy) {
-  const objectReference = { ...objToCopy };
-
-  return objectReference;
+  return { ...objToCopy };
 }
 
 module.exports = addNewProperty;

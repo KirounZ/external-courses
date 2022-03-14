@@ -1,8 +1,10 @@
 function addNewProperty(inputString, passedObj) {
-  if (passedObj.hasOwnProperty(inputString)) {
-    return passedObj;
-  }
   const testObjWithProto = passedObj;
+
+  if (testObjWithProto.hasOwnProperty(inputString)) {
+    return testObjWithProto;
+  }
+
   testObjWithProto[inputString] = 'new';
 
   return testObjWithProto;
