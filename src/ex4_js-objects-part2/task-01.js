@@ -1,12 +1,9 @@
-function serchNameProp(NameProp, newObj) {
-  const PrototypeNewObj = Object.create(newObj);
-  PrototypeNewObj.b = 2;
-
-  if (!PrototypeNewObj.hasOwnProperty(NameProp)) {
-    return newObj[NameProp];
+function serchNameProp(nameProp, newObj) {
+  if (newObj.hasOwnProperty(nameProp)) {
+    return undefined;
   }
 
-  return undefined;
+  return newObj[nameProp];
 }
 
 module.exports = serchNameProp;

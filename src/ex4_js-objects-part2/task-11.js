@@ -1,11 +1,13 @@
 function duplicateCharOut(newStr) {
   const result = {};
 
-  for (let numSymb = 0; numSymb < newStr.length; numSymb += 1) {
-    const charNewStr = newStr[numSymb];
+  for (let i = 0; i < newStr.length; i += 1) {
+    const charNewStr = newStr[i];
+
     if (!result[charNewStr]) {
       result[charNewStr] = 0;
     }
+
     result[charNewStr] += 1;
   }
 

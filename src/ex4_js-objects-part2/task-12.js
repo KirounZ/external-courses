@@ -1,5 +1,5 @@
 function sumAndRound(numOne, numTwo) {
-  return (Math.round((numOne + numTwo) * 10 ** 3)) / 10 ** 3;
+  return (Math.round((numOne + numTwo) * 1000)) / 1000;
 }
 
 module.exports = sumAndRound;

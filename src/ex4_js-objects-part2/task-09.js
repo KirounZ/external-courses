@@ -1,15 +1,15 @@
 function insertStr(newStr, wordToInsert, numberToInsert) {
   const objInStr = newStr.split(' ');
-  let StrWithNewLine = '';
+  let strWithNewLine = '';
 
-  for (let keybNewStr = 0; keybNewStr < objInStr.length; keybNewStr += 1) {
-    if (keybNewStr - 1 === numberToInsert) {
-      StrWithNewLine += `${wordToInsert} `;
+  for (let i = 0; i < objInStr.length; i += 1) {
+    if (i - 1 === numberToInsert) {
+      strWithNewLine += `${wordToInsert} `;
     }
-    StrWithNewLine += `${objInStr[keybNewStr]} `;
+    strWithNewLine += `${objInStr[i]} `;
   }
 
-  return StrWithNewLine.trim();
+  return strWithNewLine.trim();
 }
 
 module.exports = insertStr;

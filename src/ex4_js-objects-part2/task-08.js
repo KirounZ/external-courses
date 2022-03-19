@@ -1,12 +1,12 @@
 function conversionCamelCase(newStr) {
-  const objInLowerCase = newStr.toLowerCase().split(' ');
-  let StrCamelCase = '';
+  const strInLowerCase = newStr.toLowerCase().split(' ');
+  let strCamelCase = '';
 
-  for (let keybNewStr = 1; keybNewStr < objInLowerCase.length; keybNewStr += 1) {
-    StrCamelCase += `${objInLowerCase[keybNewStr][0].toUpperCase() + objInLowerCase[keybNewStr].slice(1)}`;
+  for (let i = 1; i < strInLowerCase.length; i += 1) {
+    strCamelCase += `${strInLowerCase[i][0].toUpperCase() + strInLowerCase[i].slice(1)}`;
   }
 
-  return objInLowerCase[0] + StrCamelCase.trim();
+  return strInLowerCase[0] + strCamelCase.trim();
 }
 
 module.exports = conversionCamelCase;

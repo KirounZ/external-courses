@@ -1,14 +1,14 @@
 function ucFirstAll(newStr) {
-  let StrUpCase = '';
+  let strUpCase = '';
   const massNewStr = newStr.split(' ');
 
   if (!newStr) return newStr;
 
-  for (let keybNewStr = 0; keybNewStr < massNewStr.length; keybNewStr += 1) {
-    StrUpCase += `${massNewStr[keybNewStr][0].toUpperCase() + massNewStr[keybNewStr].slice(1)} `;
+  for (let i = 0; i < massNewStr.length; i += 1) {
+    strUpCase += `${massNewStr[i][0].toUpperCase() + massNewStr[i].slice(1)} `;
   }
 
-  return StrUpCase.trim();
+  return strUpCase.trim();
 }
 
 module.exports = ucFirstAll;
