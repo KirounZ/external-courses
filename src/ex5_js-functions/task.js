@@ -48,9 +48,4 @@ function Calculator() {
 
 const calculator = Calculator();
 
-calculator.add();
-calculator.subtract();
-calculator.divide();
-calculator.multiply();
-
 module.exports = calculator;
