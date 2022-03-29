@@ -4,11 +4,7 @@ function reduce(array, callback, initialValue) {
   let previousValue = initialValue;
 
   if (initialValue === undefined) {
-    previousValue = array[0];
-
-    for (i = 1; i < length; i += 1) {
-      previousValue = callback(previousValue, array[i], i, array);
-    }
+    previousValue = 0;
   }
 
   for (i = 0; i < length; i += 1) {
