@@ -1,0 +1,15 @@
+.One {
+    border-width: 3px;
+    border-color: black;
+    border-style: solid;
+}
+
+.Two {
+    outline: 3px;
+    outline-color: black;
+    outline-style: solid;
+}
+
+.Three {
+    box-shadow: 0 0 0 3px black;
+}
