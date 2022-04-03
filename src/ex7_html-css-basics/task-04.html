@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="task-04.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Inline+One:ital@1&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Gill Sans", "Gill Sans MT", "Trebuchet MS", sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>HTML Basics</h1>
+
+      <h2>Lists</h2>
+
+      <h3>Ordered list</h3>
+      <ol>
+        <li>first item</li>
+        <li>second item</li>
+        <li>third item</li>
+        <li>founth item</li>
+        <li>fifth item</li>
+      </ol>
+
+      <h3>Unorderred list</h3>
+
+      <ul>
+        <li>A</li>
+        <li>B</li>
+        <li>C</li>
+        <li>D</li>
+        <li>E</li>
+      </ul>
+      <div class="boxGreen">
+        <h3>Description list</h3>
+        <table>
+          <tr>
+            <td>Name</td>
+          </tr>
+
+          <tr>
+            <td style="text-indent: 40px">Godzilla</td>
+          </tr>
+
+          <tr>
+            <td>Born</td>
+          </tr>
+
+          <tr>
+            <td style="text-indent: 40px">1952</td>
+          </tr>
+
+          <tr>
+            <td>Bithplace</td>
+          </tr>
+
+          <tr>
+            <td style="text-indent: 40px">Japan</td>
+          </tr>
+
+          <tr>
+            <td>Color</td>
+          </tr>
+
+          <tr>
+            <td style="text-indent: 40px">Green</td>
+          </tr>
+        </table>
+
+        <h3>Nested list</h3>
+        <ul>
+          <li>List item one</li>
+          <li>
+            List item two with subitems
+            <ul>
+              <li>
+                Subitem 1
+                <ul>
+                  <li>SubSubitem 1</li>
+                  <li>SubSubitem 2</li>
+                </ul>
+              </li>
+              <li>Subitem 2</li>
+            </ul>
+          </li>
+          <li>Final list item</li>
+        </ul>
+      </div>
+
+      <h3>List with links</h3>
+      <ul>
+        <li>
+          <a href="https://www.cgtrader.com/">Home</a>
+        </li>
+
+        <li>
+          <a href="https://www.cgtrader.com/">News</a>
+        </li>
+
+        <li>
+          <a href="https://www.cgtrader.com/">Contact</a>
+        </li>
+
+        <li>
+          <a href="https://www.cgtrader.com/">About</a>
+        </li>
+      </ul>
+
+      <hr />
+
+      <h2>Paragraphs</h2>
+      <p
+        style="
+          font-size: 36px;
+          font-family: Times, serif;
+          color: rgba(112, 102, 102, 0.671);
+        "
+      >
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sodales
+        ipsum est, eu pretium mi consectetur ut. Quisque nisl nisl, semper eget
+        metus quis, tempus dictum ex. Mauris sed lorem suscipit, porttitor risus
+        in, consequat nisl. Nullam eu ex fermentum, gravida velit et, tempus
+        mauris. Nam vel nunc vitae nisl pellentesque efficitur. Fusce egestas
+        eget mi sit amet placerat. Praesent quis semper ipsum. Donec nunc risus,
+        imperdiet sed ornare quis, efficitur non diam. Nullam pharetra mauris at
+        lectus consequat rutrum. Nullam sed dignissim nisl. In hac habitasse
+        platea dictumst.
+      </p>
+
+      <p>
+        Sed ex ipsum, tristique quis blandit vel, ultricies lacinia lectus.<br />
+        Maecenas in ullamcorper justo. Sed pulvinar orci scelerisque condimentum
+        lobortis.<br />
+        Nulla tortor urna, mollis a vestibulum a, faucibus eget lectus.<br />
+        Nulla condimentum vitae velit nec commodo.<br />
+        Quisque a metus a risus posuere condimentum.<br />
+        Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
+        cubilia curae.<br />
+        Sed mollis enim enim, sit amet aliquet eros varius sed.<br />
+        Maecenas hendrerit efficitur magna et commodo.<br />
+        Vestibulum eu massa a sem maximus scelerisque. In auctor sodales mi non
+        lobortis.
+      </p>
+
+      <hr />
+
+      <h2>Tables</h2>
+
+      <table>
+        <tr>
+          <th>First name</th>
+          <th>Last name</th>
+        </tr>
+
+        <tr>
+          <td>John</td>
+          <td>Doe</td>
+        </tr>
+
+        <tr>
+          <td>Jane</td>
+          <td>Doe</td>
+        </tr>
+      </table>
+
+      <hr />
+
+      <h2>Image</h2>
+
+      <img
+        src="the-witcher-3-wild-hunt-10k-l2.jpg"
+        alt="Обои с Ведьмаком"
+        width="500"
+      />
+
+      <hr />
+
+      <h2>Pre tag</h2>
+      <table style="text-indent: 20px">
+        <tr>
+          <td>if (time = 20) {</td>
+        </tr>
+
+        <tr>
+          <td style="text-indent: 40px">greeting = "Good day"</td>
+        </tr>
+
+        <tr>
+          <td>} else {</td>
+        </tr>
+
+        <tr>
+          <td style="text-indent: 40px">greeting = "Good evening";</td>
+        </tr>
+
+        <tr>
+          <td>}</td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,43 @@
+.container {
+    width: 750;
+}
+
+.boxGreen {
+    background-image: url('the-witcher-3-wild-hunt-10k-l2.jpg');
+    background-size: cover;
+}
+
+h1 {
+    background-image: linear-gradient(rgb(180, 164, 15), rgb(255, 123, 0));
+    border: 5px;
+    border-color: black;
+    border-style: double;
+    font-family: 'Alumni Sans Inline One', cursive;
+    font-size: 36px;
+}
+
+h2 {
+    background-image: linear-gradient(#a05619, #cfbc0f);
+    line-height: 200%;
+    border: 3px;
+    border-color: black;
+    border-style: solid;
+
+}
+
+h3 {
+    background-image: repeating-linear-gradient(rgb(255, 238, 0), rgb(179, 209, 199));
+    width: 150px;
+    line-height: 6ch;
+    font-style: italic;
+}
+
+li {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bolder;
+}
+
+p {
+    font-family: cursive;
+    font-size: large;
+}
