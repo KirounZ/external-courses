@@ -1,0 +1,30 @@
+body {
+  display: grid;
+  padding: 30px;
+}
+
+header {
+  background: lightblue;
+  justify-self: stretch;
+}
+
+section {
+  background: lightgreen;
+  width: 75%;
+  justify-self: stretch;
+}
+
+article {
+  background: white;
+  margin: 0 0 1rem 0;
+}
+
+aside {
+  background: pink;
+  width: 25%;
+  justify-self: end;
+}
+
+header, article, section, .module {
+  padding: 1rem;
+}
