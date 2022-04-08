@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="task-02.css" />
+  </head>
+  <body>
+    <form action="http://httpbin.org/get" method="GET">
+      <fieldset>
+        <legend>Personal data</legend>
+
+        <p>
+          Surename
+          <input type="text" name="Surename" />
+        </p>
+
+        <p>
+          First Name
+          <input type="text" name="FirstName" />
+        </p>
+
+        <p>
+          Midle Name
+          <input type="text" name="MidleName" />
+        </p>
+
+        <p>
+          You are <input type="radio" name="maleFemale" /> male
+          <input type="radio" name="maleFemale" /> female
+        </p>
+
+        <p>
+          Age
+          <input type="number" name="Age" min="18" max="101" />
+        </p>
+
+        <p>
+          Country of Residence
+          <select name="Country">
+            <option value="Russia">Russia</option>
+          </select>
+        </p>
+
+        <p>
+          City <input type="checkbox" name="Ryazan" /> Ryazan
+          <input type="checkbox" name="Moscow" /> Moscow
+        </p>
+
+        <p>
+          Photograhy
+          <input type="file" />
+        </p>
+
+        <hr />
+
+        <div>
+          <p>
+            Title
+            <select size="8">
+              <optgroup label="Technologies">
+                <option value="r1">Web Master</option>
+                <option value="r2">Database Administrator</option>
+                <option value="r3">Computer-aided design</option>
+              </optgroup>
+              <optgroup label="Finance">
+                <option value="w1">Economic Planning</option>
+                <option value="w2">Management accounting</option>
+                <option value="w3">Budgeting and planning</option>
+              </optgroup>
+            </select>
+          </p>
+        </div>
+
+        <p>
+          Salary
+          <input type="range" name="Salary" />
+        </p>
+
+        <textarea
+          name="text"
+          rows="10"
+          cols="50"
+          wrap="hard"
+          placeholder="Tell us about yourself..."
+        ></textarea>
+      </fieldset>
+
+      <fieldset>
+        <legend>Contact information</legend>
+
+        <p>
+          Site
+          <input type="text" name="Site" />
+        </p>
+
+        <p>
+          Email
+          <input type="email" name="Email" />
+        </p>
+
+        <p>
+          Phone
+          <input
+            type="tel"
+            name="Phone"
+            placeholder="+7***********"
+            pattern="[\+][\+7]\d{11}}"
+            minlength="8"
+            maxlength="18"
+          />
+        </p>
+      </fieldset>
+
+      <p>
+        Password
+        <input type="password" required />
+      </p>
+
+      <input type="submit" value="Отправить" />
+      <input type="reset" value="Сбросить" />
+    </form>
+  </body>
+</html>
