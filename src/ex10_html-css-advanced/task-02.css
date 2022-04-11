@@ -1,0 +1,52 @@
+div {
+  display: flex;
+  flex-direction: column-reverse;
+  max-width: 500px;
+}
+
+.two {
+  flex-direction: row;
+}
+
+.priceContainer {
+  border-right: 1px solid #bdbdbd;
+}
+
+#price{
+  width: 98px;
+}
+
+#location{
+  width: 360px
+}
+
+input{
+  border: none;
+  padding: 10px;
+  margin-top: 5px;
+  font-size: 20px;
+  border-bottom: 1px solid #bdbdbd;
+  outline: none;
+  caret-color: rgb(29, 127, 255);
+  
+}
+
+label {
+  padding-left: 10px;
+  font-weight: 700;
+  color: #bdbdbd;
+  transform: translateY(40px);
+  transform-origin: left top;
+  cursor: text;
+  transition: all 0.2s;
+}
+
+ input:not(:placeholder-shown) ~ label {
+  color: #bdbdbd;
+  transform: translateY(10px) scale(.8);
+}
+
+input:focus ~ label{
+  color: rgb(29, 127, 255);
+  transform: translateY(10px) scale(.8);
+}

@@ -1,0 +1,215 @@
+#loader{
+  position: relative;
+  width: 40px;
+  height: 40px;
+  margin: auto;
+}
+
+.circleLoader{
+  position: absolute;
+  background-color: rgb(255, 255, 255);
+  width: 5px;
+  height: 5px;
+  border-radius: 100%;
+  animation-name: bounceCircle;
+  animation-duration: 1.1s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+}
+
+#circle1{
+  left: 30px;
+  top: 15px;
+  animation-delay: 0.1375s;
+}
+
+#circle2{
+  left: 25px;
+  top: 25px;
+  animation-delay: 0.275s;
+}
+
+#circle3{
+  left: 15px;
+  top: 30px;
+  animation-delay: 0.4125s;
+}
+
+#circle4{
+  left: 5px;
+  top: 25px;
+  animation-delay: 0.55s;
+}
+
+#circle5{
+  left: 0px;
+  top: 15px;
+  animation-delay: 0.6875s;
+}
+
+#circle6{
+  left: 5px;
+  top: 5px;
+  animation-delay: 0.825s;
+}
+
+#circle7{
+  left: 15px;
+  top: 0px;
+  animation-delay: 0.9625s;
+}
+
+#circle8{
+  left: 25px;
+  top: 5px;
+  animation-delay: 1.1s;
+}
+
+@keyframes bounceCircle {
+  0%{
+    transform: scale(1);
+    background-color: rgb(79, 11, 100);
+  }
+
+  100%{
+    transform: scale(.5);
+    background-color: rgba(79, 11, 100, 0);
+
+  }
+}
+
+#bounceBall{
+  position: relative;
+  width: 200px;
+  height: 150px;
+  margin: auto;
+}
+
+.ball{
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  background-color: rgb(78, 63, 63);
+  animation: bounce 1s infinite normal, upDown 2s infinite alternate linear;
+}
+
+.wall{
+  position: absolute;
+  width: 100px;
+  height: 150px;
+  background-color: rgb(94, 90, 90);
+}
+
+#wall1{
+ left: 200px;
+}
+
+#wall2{
+ right: 200px;
+}
+
+@keyframes bounce {
+  0%{
+    left: 180px;
+    width: 10px;
+    height: 23px;
+    background-color: rgb(235, 15, 224);
+  }
+
+  15%{
+    width: 20px;
+    height: 20px;
+    background-color: rgb(78, 63, 63);
+  }
+
+  35%{
+    width: 20px;
+    height: 20px;
+    background-color: rgb(78, 63, 63);
+  }
+
+  50%{
+    left: 0%;
+    width: 10px;
+    height: 23px;
+    background-color: rgb(235, 11, 223);
+  }
+
+  65%{
+    width: 20px;
+    height: 20px;
+    background-color: rgb(78, 63, 63);
+  }
+
+  85%{
+    width: 20px;
+    height: 20px;
+    background-color: rgb(78, 63, 63);
+  }
+
+  100%{
+    left: 190px;
+    width: 10px;
+    height: 23px;
+    background-color: rgb(90, 20, 86);
+  }
+}
+
+@keyframes upDown {
+  from{top: 0;}
+  to{top: 130px}
+}
+
+#infinityAnimation{
+  position: relative;
+  width: 120px;
+  height: 120px;
+  top: 20px;
+  margin: auto;
+}
+
+.animatedObject{
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  animation: transformAnimation 10s infinite normal;
+  background-color: rgb(104, 104, 104);
+}
+
+@keyframes transformAnimation {
+  0%{
+    border-radius: 100%;
+    background-image: radial-gradient(rgb(0, 255, 128), rgb(37, 175, 180), rgb(6, 18, 68));
+  }
+
+  20%{
+    border-radius: 0%;
+    background-image: radial-gradient(rgb(0, 255, 128), rgb(37, 175, 180), rgb(6, 18, 68))
+  }
+
+  40%{
+    background-image: radial-gradient(rgb(89, 0, 255), rgb(79, 25, 180), rgb(218, 16, 174));
+    width: 120px;
+    height: 120px;
+    transform: scale(1);
+  }
+
+  60%{
+    height: 240px;
+  }
+
+  80%{
+    transform: scale(.2);
+    transform: rotate(90deg);
+    border-radius: 0;
+  }
+
+  100%{
+    transform: rotate(90deg);
+    width: 120px;
+    height: 120px;
+    border-radius: 100%;
+    background-image: radial-gradient(rgb(0, 255, 128), rgb(37, 175, 180), rgb(6, 18, 68))
+  }
+}
