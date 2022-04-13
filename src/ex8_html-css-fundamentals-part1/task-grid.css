@@ -1,17 +1,21 @@
 body {
   display: grid;
+  grid-template-areas:
+    'header  header'
+    'section  aside';
+  grid-template-columns: 75% 25%;
   padding: 30px;
+  margin: 0;
 }
 
 header {
   background: lightblue;
-  justify-self: stretch;
+  grid-area: header;
 }
 
 section {
   background: lightgreen;
-  width: 75%;
-  justify-self: stretch;
+  grid-area: section;
 }
 
 article {
@@ -19,12 +23,16 @@ article {
   margin: 0 0 1rem 0;
 }
 
+article, header, aside {
+  word-break: break-all;
+}
+
 aside {
   background: pink;
-  width: 25%;
-  justify-self: end;
+  grid-area: aside;
 }
 
 header, article, section, .module {
   padding: 1rem;
+
 }
