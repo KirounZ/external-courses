@@ -1,12 +1,7 @@
-.Country {
+.country {
     width: 20px;
 }
 
 input:invalid {
     border: 2px dashed rgb(252, 100, 100);
-}
-
-input:invalid:required {
-    background-color: pink;
-    ;
 }
