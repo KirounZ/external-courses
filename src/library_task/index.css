@@ -1,0 +1,157 @@
+@font-face {
+  font-family: 'FontAwesome';
+  src: url(assets/fonts/FontAwesome.otf);
+}
+
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  position: relative;
+  min-height: 100%;
+}
+
+header, footer {
+  height: 50px;
+  z-index: 1;
+}
+
+header {
+  letter-spacing: 1px;
+  color: rgb(92, 100, 121);
+  background-color: rgb(47, 54, 73);
+}
+
+footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #181e2c;
+}
+
+.main-header-nav-ul>li {
+  display: inline-block;
+  margin-right: 10px;
+  position: relative;
+
+}
+
+.main-footer-nav-ul>li {
+  display: inline-block;
+  position: relative;
+}
+
+.main-header-nav, .main-footer-nav {
+  position: relative;
+  white-space: nowrap;
+  float: right;
+  z-index: 3;
+}
+
+ol {
+  height: 50px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  display: block;
+  padding: 15px;
+  padding-top: 20px;
+  height: 20px;
+  text-decoration: none;
+  color: rgb(92, 100, 121);
+}
+
+header p {
+  margin: 0;
+  display: block;
+  padding: 15px;
+  height: 20px;
+  text-decoration: none;
+}
+
+#user {
+  padding: 0px;
+  color: white;
+  width: 115px;
+  text-align: right;
+  vertical-align: middle;
+}
+
+#dot {
+  padding: 0px;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 2px;
+  background-color: #1f2637;
+}
+
+#avatar-user {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  position: absolute;
+  top: 10px;
+  right: 135px;
+  background-image: url("assets/images/avatar-01.png");
+  z-index: 4;
+}
+
+#circle-user {
+  width: 30px;
+  height: 30px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: rgb(238, 241, 247);
+  border-radius: 50%;
+  position: absolute;
+  top: 8px;
+  right: 133px;
+  background-color: #6eb5eb;
+  z-index: 3;
+}
+
+#arrow {
+  margin-right: 10px;
+  padding: 0;
+  font-size: 14px;
+  font-family: "FontAwesome";
+  color: rgb(238, 241, 247);
+  z-index: 3;
+}
+
+#bluebackground {
+  position: absolute;
+  width: 180px;
+  height: 50px;
+  right: 0;
+  background-color: #15a4fa;
+  z-index: 2;
+}
+
+#setting, #help {
+  padding: 15px;
+  padding-left: 25px;
+  padding-right: 25px;
+  font-size: 20px;
+  font-family: "FontAwesome";
+  color: rgb(255, 255, 255);
+  z-index: 2;
+}
+
+#setting {
+  background-color: #15a4fa;
+}
+
+#help {
+  background-color: #1f2637;
+}
