@@ -1,0 +1,38 @@
+body {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  margin: 0;
+}
+
+form {
+  display: flex;
+  flex-direction: row;
+}
+
+header {
+  background: lightblue;
+}
+
+section {
+  background: lightgreen;
+  width: 75%;
+}
+
+article {
+  background: white;
+  margin: 0 0 1rem 0;
+}
+
+article, header, aside {
+  word-break: break-all;
+}
+
+aside {
+  background: pink;
+  width: 25%;
+}
+
+header, article, section, .module {
+  padding: 1rem;
+}

@@ -1,0 +1,30 @@
+.checkout {
+  width: 250;
+  color: rgb(83, 83, 83);
+  font-style: normal;
+  font-family: 'Alfa Slab One', cursive;
+  font-size: 10px;
+  background: linear-gradient(rgb(233, 233, 233), rgb(126, 126, 126));
+  border-radius: 5px;
+  box-shadow: 0 0 5px 1px;
+  padding: 5px;
+  box-shadow: 0 0 0 3px rgb(209, 209, 209),
+    0 0 0 4px rgb(255, 255, 255),
+    0 0 0 5px rgb(100, 100, 100);
+}
+
+.checkout:before {
+  float: left;
+  text-align: center;
+  pointer-events: none;
+  content: "\2605";
+  color: rgb(134, 134, 134)
+}
+
+.checkout:after {
+  float: right;
+  text-align: center;
+  pointer-events: none;
+  content: "\2605";
+  color: rgb(134, 134, 134);
+}
