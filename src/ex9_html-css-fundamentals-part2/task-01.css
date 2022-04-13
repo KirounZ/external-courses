@@ -1,0 +1,32 @@
+.circle {
+  display: block;
+  margin: auto;
+  object-fit: cover;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+}
+
+.diamond, .diamond1 {
+  margin: auto;
+  transform-origin: 50% 50%;
+  width: 500px;
+  height: 500px;
+  overflow: hidden;
+}
+
+.diamond {
+  transform: rotate(45deg) translateY(-25px) translateX(-25px);
+}
+
+.diamond .diamond1 {
+  width: 1000px;
+  height: 1000px;
+  transform: rotate(-45deg);
+}
+
+.diamond img {
+  object-fit: cover;
+  width: 100%;
+  height: 500px;
+}

@@ -1,0 +1,11 @@
+tbody tr:hover {
+  background: rgb(226, 229, 233);
+}
+
+.mark, .flinn, .summer, .ricky {
+  background-color: rgb(227, 234, 243);
+}
+
+.jhonny, .richlcl, .filip, .marco {
+  background-color: rgb(242, 246, 250);
+}
