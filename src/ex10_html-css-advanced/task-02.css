@@ -10,17 +10,14 @@ div {
 
 .priceContainer {
   border-right: 1px solid #bdbdbd;
+  width: 100px;
 }
 
-#price{
-  width: 98px;
+.locationContainer {
+  width: 400px;
 }
 
-#location{
-  width: 360px
-}
-
-input{
+input {
   border: none;
   padding: 10px;
   margin-top: 5px;
@@ -28,8 +25,8 @@ input{
   border-bottom: 1px solid #bdbdbd;
   outline: none;
   caret-color: rgb(29, 127, 255);
-  
 }
+
 
 label {
   padding-left: 10px;
@@ -38,15 +35,28 @@ label {
   transform: translateY(40px);
   transform-origin: left top;
   cursor: text;
-  transition: all 0.2s;
+  z-index: 1;
 }
 
- input:not(:placeholder-shown) ~ label {
+input:not(:placeholder-shown)~label {
   color: #bdbdbd;
   transform: translateY(10px) scale(.8);
 }
 
-input:focus ~ label{
+input:focus~label {
   color: rgb(29, 127, 255);
-  transform: translateY(10px) scale(.8);
+  transform: translateY(15px) scale(.8);
+  animation: surfacing-text 0.8s forwards;
+}
+
+@keyframes surfacing-text {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(10px) scale(.8);
+    ;
+    opacity: 1;
+  }
 }
