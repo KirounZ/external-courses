@@ -3,31 +3,27 @@
   src: url(assets/fonts/FontAwesome.otf);
 }
 
-
-html, body {
+body {
   height: 100%;
   margin: 0;
   padding: 0;
-}
-
-body {
   position: relative;
   min-height: 100%;
 }
 
-header, footer {
+.main-header, .main-footer {
   height: 50px;
   z-index: 1;
 }
 
-header {
+.main-header {
   letter-spacing: 1px;
-  color: rgb(92, 100, 121);
-  background-color: rgb(47, 54, 73);
+  color: #5c6479;
+  background-color: #2f3649; 
 }
 
-footer {
-  position: absolute;
+.main-footer {
+  position: fixed;
   left: 0;
   bottom: 0;
   width: 100%;
@@ -36,9 +32,7 @@ footer {
 
 .main-header-nav-ul>li {
   display: inline-block;
-  margin-right: 10px;
   position: relative;
-
 }
 
 .main-footer-nav-ul>li {
@@ -53,40 +47,44 @@ footer {
   z-index: 3;
 }
 
-ol {
+.main-header-nav-ul, .main-footer-nav-ul {
   height: 50px;
   list-style: none;
   margin: 0;
-  padding: 0;
 }
 
-a {
-  display: block;
-  padding: 15px;
-  padding-top: 20px;
-  height: 20px;
+.main-header-nav button {
+  border-radius: 0px;
   text-decoration: none;
-  color: rgb(92, 100, 121);
+  font-family: "FontAwesome";
+  outline: none;
 }
 
-header p {
+.header-button, .button-arrow{
+  border: 0;
+  background-color: transparent;
+}
+
+.header-button{
+  margin-right: 5px;
+  margin-left: 15px;
+  height: 50px;
+  color: #5c6479;
+}
+
+.header-button:active{
+  color: #2f3649;
+  background-color: #5c6479;
+} 
+
+.main-header p {
   margin: 0;
   display: block;
-  padding: 15px;
-  height: 20px;
   text-decoration: none;
 }
 
-#user {
-  padding: 0px;
-  color: white;
-  width: 115px;
-  text-align: right;
-  vertical-align: middle;
-}
-
-#dot {
-  padding: 0px;
+.dot {
+  margin-right: 15px;
   width: 5px;
   height: 5px;
   border-radius: 50%;
@@ -95,63 +93,85 @@ header p {
   background-color: #1f2637;
 }
 
-#avatar-user {
+.avatar-user {
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  position: absolute;
-  top: 10px;
-  right: 135px;
-  background-image: url("assets/images/avatar-01.png");
-  z-index: 4;
-}
-
-#circle-user {
-  width: 30px;
-  height: 30px;
-  border-style: solid;
-  border-width: 2px;
-  border-color: rgb(238, 241, 247);
-  border-radius: 50%;
-  position: absolute;
-  top: 8px;
-  right: 133px;
-  background-color: #6eb5eb;
+  margin-left: 20px;
+  border: 1.5px solid #ffffff;
+  align-items: center;
+  vertical-align: middle;
   z-index: 3;
 }
 
-#arrow {
-  margin-right: 10px;
-  padding: 0;
-  font-size: 14px;
+.header-user {
+  padding: 15px;
+  color: #ffffff;
+  text-decoration: none;
+  font-family: "FontAwesome"
+}
+
+.button-arrow{
+  margin-right: 15px;
+  vertical-align: middle;
+  font-size: medium;
+  color: #ffffff;
+}
+
+.button-arrow:active{
+  border-radius: 50%;
+  color: #000000;
+  background-color: transparent; 
+} 
+
+.setting, .help {
+  padding: 15px;
+  padding-left: 25px;
+  padding-right: 25px;
+  font-size: 20px;
   font-family: "FontAwesome";
-  color: rgb(238, 241, 247);
-  z-index: 3;
+  color: #ffffff;
+  z-index: 2;
 }
 
-#bluebackground {
+.background-user {
   position: absolute;
-  width: 180px;
+  width: 195px;
   height: 50px;
   right: 0;
   background-color: #15a4fa;
   z-index: 2;
 }
 
-#setting, #help {
-  padding: 15px;
-  padding-left: 25px;
-  padding-right: 25px;
-  font-size: 20px;
+.main-footer-nav button {
+  border-radius: 0px;
+  padding: 20px 25px 20px 25px;
+  text-decoration: none;
   font-family: "FontAwesome";
-  color: rgb(255, 255, 255);
-  z-index: 2;
+  outline: none;
 }
 
-#setting {
+.footer-button-help, .footer-button-setting{
+  border: 0;
+  background-color: transparent;
+  height: 50px;
+  color: #ffffff;
+}
+
+.footer-button-help{
+  background-color: #1f2637;
+}
+
+.footer-button-setting{
   background-color: #15a4fa;
 }
 
-#help {
-  background-color: #1f2637;
-}
+.footer-button-help:active{
+  color: #1f2637;
+  background-color: #5c6479;
+} 
+
+.footer-button-setting:active{
+  color: #1f2637;
+  background-color: #5c6479;
+} 
