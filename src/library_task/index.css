@@ -1,0 +1,177 @@
+@font-face {
+  font-family: 'FontAwesome';
+  src: url(assets/fonts/FontAwesome.otf);
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  min-height: 100%;
+}
+
+.main-header, .main-footer {
+  height: 50px;
+  z-index: 1;
+}
+
+.main-header {
+  letter-spacing: 1px;
+  color: #5c6479;
+  background-color: #2f3649; 
+}
+
+.main-footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #181e2c;
+}
+
+.main-header-nav-ul>li {
+  display: inline-block;
+  position: relative;
+}
+
+.main-footer-nav-ul>li {
+  display: inline-block;
+  position: relative;
+}
+
+.main-header-nav, .main-footer-nav {
+  position: relative;
+  white-space: nowrap;
+  float: right;
+  z-index: 3;
+}
+
+.main-header-nav-ul, .main-footer-nav-ul {
+  height: 50px;
+  list-style: none;
+  margin: 0;
+}
+
+.main-header-nav button {
+  border-radius: 0px;
+  text-decoration: none;
+  font-family: "FontAwesome";
+  outline: none;
+}
+
+.header-button, .button-arrow{
+  border: 0;
+  background-color: transparent;
+}
+
+.header-button{
+  margin-right: 5px;
+  margin-left: 15px;
+  height: 50px;
+  color: #5c6479;
+}
+
+.header-button:active{
+  color: #2f3649;
+  background-color: #5c6479;
+} 
+
+.main-header p {
+  margin: 0;
+  display: block;
+  text-decoration: none;
+}
+
+.dot {
+  margin-right: 15px;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 2px;
+  background-color: #1f2637;
+}
+
+.avatar-user {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-left: 20px;
+  border: 1.5px solid #ffffff;
+  align-items: center;
+  vertical-align: middle;
+  z-index: 3;
+}
+
+.header-user {
+  padding: 15px;
+  color: #ffffff;
+  text-decoration: none;
+  font-family: "FontAwesome"
+}
+
+.button-arrow{
+  margin-right: 15px;
+  vertical-align: middle;
+  font-size: medium;
+  color: #ffffff;
+}
+
+.button-arrow:active{
+  border-radius: 50%;
+  color: #000000;
+  background-color: transparent; 
+} 
+
+.setting, .help {
+  padding: 15px;
+  padding-left: 25px;
+  padding-right: 25px;
+  font-size: 20px;
+  font-family: "FontAwesome";
+  color: #ffffff;
+  z-index: 2;
+}
+
+.background-user {
+  position: absolute;
+  width: 195px;
+  height: 50px;
+  right: 0;
+  background-color: #15a4fa;
+  z-index: 2;
+}
+
+.main-footer-nav button {
+  border-radius: 0px;
+  padding: 20px 25px 20px 25px;
+  text-decoration: none;
+  font-family: "FontAwesome";
+  outline: none;
+}
+
+.footer-button-help, .footer-button-setting{
+  border: 0;
+  background-color: transparent;
+  height: 50px;
+  color: #ffffff;
+}
+
+.footer-button-help{
+  background-color: #1f2637;
+}
+
+.footer-button-setting{
+  background-color: #15a4fa;
+}
+
+.footer-button-help:active{
+  color: #1f2637;
+  background-color: #5c6479;
+} 
+
+.footer-button-setting:active{
+  color: #1f2637;
+  background-color: #5c6479;
+} 
