@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My library</title>
   <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="index_1.css">
 </head>
 <body>
   <header class="main-header">
@@ -19,11 +20,211 @@
         <li><button class="button-arrow"></button></li>
       </ul> 
     </nav>
-
       <div class="background-user"></div>
-
   </header>
     
+  <nav class="sidebar">
+    <ul class="sidebar-addbook">
+      <li>
+        <button class="sidebar-button-addbook">
+          <p>add a book</p>
+        </button>
+      </li>
+    </ul>
+
+    <div class="line-after-addbook"></div>
+    <div class="divider"></div>
+    <div class="line-after-main-nav"></div>
+
+    <ul class="sidebar-main-nav">
+      <li>
+        <button class="sidebar-button">
+          <p class="icon"></p>
+          <p class="text-button">now reading</p>
+        </button>
+      </li>
+      <li>
+        <button class="sidebar-button-browse">
+          <p class="icon"></p>
+          <p class="text-button">browse</p>
+        </button>
+      </li>
+      <li>
+        <button class="sidebar-button">
+          <p class="icon"></p>
+          <p class="text-button">buy books</p>
+        </button>
+      </li>
+      <li>
+        <button class="sidebar-button">
+          <p class="icon"></p>
+          <p class="text-button">favouritte books</p>
+        </button>
+      </li>
+      <li>
+        <button class="sidebar-button">
+          <p class="icon"></p>
+          <p class="text-button">wishlist</p>
+        </button>
+      </li>
+      <li>
+        <button class="sidebar-button">
+          <p class="icon"></p>
+          <p class="text-button">history</p>
+        </button>
+      </li>
+    </ul> 
+
+    <div class="line-after-addbook"></div>
+    <div class="divider"></div>
+    <div class="line-after-main-nav"></div>
+
+    <ul class="personal-categories">
+      <li>
+        <button class="sidebar-button-mustread">
+          <div class="circle_1"></div>
+          <p class="text-button">must read titles</p>
+        </button>
+      </li>
+      <li>
+        <button class="sidebar-button-best">
+          <div class="circle_2"></div>
+          <p class="text-button">best of list</p>
+        </button>
+      </li>
+      <li>
+        <button class="sidebar-button-novels">
+          <div class="circle_3"></div>
+          <p class="text-button">classic novels</p>
+        </button>
+      </li>
+      <li>
+        <button class="sidebar-button-fiction">
+          <div class="circle_4"></div>
+          <p class="text-button">non fiction</p>
+        </button>
+      </li>
+    </ul>
+
+    <div class="line-after-addbook"></div>
+    <div class="divider"></div>
+    <div class="line-after-main-nav"></div>
+
+    <ul class="history-list">
+      <li>
+          <p class="icon-history-list"></p>
+            <p class="text-history">You added <a>Fight Club</a> by <a>Chuck Palahniuk</a> to your <a>Must Read Title.</a></p>
+            <p class="time">24 minute ago</p>
+      </li>
+      <li>
+          <p class="icon-history-list"></p>
+            <p class="text-history">You added <a>The Trial</a> by <a>Franz Kafka</a> to your <a>Must Read Titles.</a></p>
+            <p class="time">48 minute ago</p>
+      </li>
+    </ul>
+  </nav>
+
+  <nav class="panel">
+    <p class="header-search-panel">Browse Available Books</p>
+
+    <div class="line-after-header-search-panel"></div>
+
+    <ul class="header-search-panel-ul">
+      <li><button class="filter-button-allbooks">all books</button></li>
+      <li><button class="filter-button">most recent</button></li>
+      <li><button class="filter-button">most popular</button></li>
+      <li><button class="filter-button">free books</button></li>
+      <li class="search-panel">
+        <form>
+          <input type="text" class="filter-search" placeholder="Enter Keywords">
+          <button class="filter-search-button"></button>
+        </form>
+      </li>
+    </ul> 
+
+    <div class="line-after-header-search-panel"></div>
+
+  </nav>
+
+  <main class="filter-results">
+    <table class="filter-results-table">
+      <tr class="filter-results-first-line">
+        <th>
+          <img src="assets/images/book-1.jpg">
+          <p class="book-name">Jewels of Nizam</p>
+          <p class="book-author">by Geeta Devi</p>
+          <p class="raiting"></p>
+        </th>
+
+        <th>
+          <img src="assets/images/book-2.jpg">
+          <p class="book-name">Cakes & Bakes</p>
+          <p class="book-author">by Sanjeev Kapoor</p>
+          <p class="raiting"></p>
+        </th>
+
+        <th>
+          <img src="assets/images/book-3.jpg">
+          <p class="book-name">Jamie’s Kitchen</p>
+          <p class="book-author">by Jamie Oliver</p>
+          <p class="raiting"></p>
+        </th>
+
+        <th>
+          <img src="assets/images/book-4.jpg">
+          <p class="book-name">Inexpensive Family Meals</p>
+          <p class="book-author">by Simon Holst</p>
+          <p class="raiting"></p>
+        </th>
+
+        <th>
+          <img src="assets/images/book-5.jpg">
+          <p class="book-name">Paleo Slow Cooking</p>
+          <p class="book-author">by Chrissy Gower</p>
+          <p class="raiting"></p>
+        </th>
+      </tr>
+
+      <tr class="filter-results-second-line">       
+        <th>
+          <img src="assets/images/book-6.jpg">
+          <p class="book-name">Cook Like an Italian</p>
+          <p class="book-author">by Tobie Puttock</p>
+          <p class="raiting"></p>
+        </th>
+
+        <th>
+          <img src="assets/images/book-7.jpg">
+          <p class="book-name">Suneeta Vaswani</p>
+          <p class="book-author">by Geeta Devi</p>
+          <p class="raiting"></p>
+        </th>
+
+        <th>
+          <img src="assets/images/book-8.jpg">
+          <p class="book-name">Jamie Does</p>
+          <p class="book-author">by Jamie Oliver</p>
+          <p class="raiting"></p>
+        </th>
+
+        <th>
+          <img src="assets/images/book-9.jpg">
+          <p class="book-name">Jamie’s italy</p>
+          <p class="book-author">by Jamie Oliver</p>
+          <p class="raiting"></p>
+        </th>
+
+        <th>
+          <img src="assets/images/book-10.jpg">
+          <p class="book-name">Vegetables Cookbook</p>
+          <p class="book-author">by Matthew Biggs</p>
+          <p class="raiting"></p>
+        </th>
+      </tr>
+
+    </table>
+  </main>
+
   <footer class="main-footer">
     <nav class="main-footer-nav">
       <ul class="main-footer-nav-ul">
@@ -33,5 +234,6 @@
     </nav>
 
   </footer>
+
 </body>
 </html>

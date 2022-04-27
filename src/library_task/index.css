@@ -3,20 +3,27 @@
   src: url(assets/fonts/FontAwesome.otf);
 }
 
+button{
+  font-family: "FontAwesome";
+}
+
 body {
-  height: 100%;
+  width: 1320px;
   margin: 0;
   padding: 0;
   position: relative;
-  min-height: 100%;
+  font-family: "FontAwesome";
 }
 
 .main-header, .main-footer {
-  height: 50px;
+  position: fixed;
+  width: 1320px;
+  height: 45px;
   z-index: 1;
 }
 
 .main-header {
+  top: 0;
   letter-spacing: 1px;
   color: #5c6479;
   background-color: #2f3649; 
@@ -26,7 +33,6 @@ body {
   position: fixed;
   left: 0;
   bottom: 0;
-  width: 100%;
   background-color: #181e2c;
 }
 
@@ -48,7 +54,7 @@ body {
 }
 
 .main-header-nav-ul, .main-footer-nav-ul {
-  height: 50px;
+  height: 45px;
   list-style: none;
   margin: 0;
 }
@@ -56,7 +62,6 @@ body {
 .main-header-nav button {
   border-radius: 0px;
   text-decoration: none;
-  font-family: "FontAwesome";
   outline: none;
 }
 
@@ -68,8 +73,9 @@ body {
 .header-button{
   margin-right: 5px;
   margin-left: 15px;
-  height: 50px;
+  height: 45px;
   color: #5c6479;
+  font-family: "Proxima Nova";
 }
 
 .header-button:active{
@@ -79,6 +85,7 @@ body {
 
 .main-header p {
   margin: 0;
+  padding: 0;
   display: block;
   text-decoration: none;
 }
@@ -105,10 +112,14 @@ body {
 }
 
 .header-user {
+  font-size: 13px;
+  font-family: "Proxima Nova";
+  color: rgb( 255, 255, 255 );
+  line-height: 2;
+  text-align: left;
   padding: 15px;
   color: #ffffff;
   text-decoration: none;
-  font-family: "FontAwesome"
 }
 
 .button-arrow{
@@ -136,8 +147,8 @@ body {
 
 .background-user {
   position: absolute;
-  width: 195px;
-  height: 50px;
+  width: 160px;
+  height: 45px;
   right: 0;
   background-color: #15a4fa;
   z-index: 2;
