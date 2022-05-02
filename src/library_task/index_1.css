@@ -3,11 +3,11 @@
     src: url(assets/fonts/ProximaNovaRegular.otf);
 }
 
-.text-button{
+.text-button {
     font-family: 'Proxima Nova';
 }
 
-.sidebar{
+.sidebar {
     height: 100%;
     width: 200px;
     top: 45px;
@@ -16,7 +16,7 @@
     background: #1f2637;
 }
 
-.sidebar-addbook{
+.sidebar-addbook {
     padding-left: 0;
     margin-top: 35px;
     margin-bottom: 0;
@@ -29,12 +29,12 @@
     list-style-type: none;
 }
 
-.personal-categories{
+.personal-categories {
     padding: 0;
     list-style-type: none;
 }
 
-.sidebar-button, .sidebar-button-browse, .personal-categories button{
+.sidebar-button, .sidebar-button-browse, .personal-categories button {
     border: 0;
     height: 38px;
     width: 100%;
@@ -48,38 +48,38 @@
     font-size: 13px;
 }
 
-.sidebar-button:active{
+.sidebar-button:active {
     color: #ffffff;
     background-color: #15a4fa;
-} 
+}
 
-.sidebar-button p, .sidebar-button-browse p, .text-button{
+.sidebar-button p, .sidebar-button-browse p, .text-button {
     margin: 0;
     display: inline-block;
 }
 
-.icon{
+.icon {
     height: 16px;
     width: 16px;
     text-align: center;
 }
 
-.text-button{
+.text-button {
     padding-left: 10px;
     text-transform: capitalize;
 }
 
-.sidebar-button-browse{
+.sidebar-button-browse {
     color: #ffffff;
     background-color: #15a4fa;
 }
 
-.sidebar-button-browse:active{
+.sidebar-button-browse:active {
     color: #15a4fa;
     background-color: #ffffff;
 }
 
-.sidebar-button-addbook{
+.sidebar-button-addbook {
     border: 0;
     margin-left: 20px;
     margin-right: 20px;
@@ -95,12 +95,12 @@
     background-color: #f2795a;
 }
 
-.sidebar-button-addbook:active{
+.sidebar-button-addbook:active {
     color: #f2795a;
     background-color: #ffffff;
 }
 
-.sidebar-button-addbook p{
+.sidebar-button-addbook p {
     margin: 0;
     padding-left: 10px;
     display: inline-block;
@@ -113,22 +113,22 @@
 }
 
 .line-after-addbook {
-    background-color: rgb( 20, 24, 36 );
+    background-color: rgb(20, 24, 36);
     position: relative;
     left: 0px;
     width: 200px;
     height: 1.8px;
 }
-  
+
 .divider {
-    background-color: rgb( 24, 30, 44 );
+    background-color: rgb(24, 30, 44);
     position: relative;
     left: 0px;
     width: 200px;
     height: 4px;
 }
 
-.personal-categories button:active{
+.personal-categories button:active {
     color: #ffffff;
     background-color: #15a4fa;
 }
@@ -138,9 +138,9 @@
     position: relative;
     left: 0px;
     height: 1px;
-  }
-  
-.circle_1, .circle_2, .circle_3, .circle_4{
+}
+
+.circle_1, .circle_2, .circle_3, .circle_4 {
     margin: 5px;
     display: inline-block;
     vertical-align: middle;
@@ -149,28 +149,28 @@
     height: 6px;
 }
 
-.circle_1{
+.circle_1 {
     background-color: #e64c66;
 }
-  
-.circle_2{
+
+.circle_2 {
     background-color: #f0a204;
 }
 
-.circle_3{
+.circle_3 {
     background-color: #00bfdd;
 }
 
-.circle_4{
+.circle_4 {
     background-color: #7874cf;
 }
 
-.history-list{
+.history-list {
     list-style-type: none;
     padding-left: 20px;
 }
 
-.history-list p{
+.history-list p {
     color: #5c6479;
     display: inline-block;
 }
@@ -179,14 +179,14 @@
     margin-bottom: 0;
 }
 
-.icon-history-list{
+.icon-history-list {
     vertical-align: top;
     height: 16px;
     width: 16px;
     text-align: center;
 }
 
-.text-history{
+.text-history {
     margin-left: 6px;
     font-family: "Proxima Nova";
     width: 131px;
@@ -194,7 +194,7 @@
     font-size: 12px;
 }
 
-.time{
+.time {
     margin-left: 25px;
     margin-top: 6px;
     font-family: "Proxima Nova";
@@ -202,62 +202,56 @@
     font-size: 12px;
 }
 
-.text-history a{
+.text-history a {
     color: #677b92;
 }
 
-.text-history a:hover{
+.text-history a:hover {
     cursor: pointer;
     text-decoration: underline;
 }
 
-.text-history a:active{
+.text-history a:active {
     cursor: pointer;
     text-decoration: underline;
     color: #ffffff;
 }
 
-.panel{
-    top: 45px;
-    margin: 0 0 0 200px;
+.panel {
+    display: flex;
+    flex-direction: column;
+    margin: 45px 0 0 200px;
     height: 120px;
-    width: calc(1320px - 200px);
-    position: fixed;
     background-color: #eef1f7;
 }
 
-.header-search-panel{
+.header-search-panel {
     display: table-cell;
     padding-left: 20px;
     font-size: 22px;
-    height: 70px;
     font-family: "Proxima Nova";
-    color: rgb( 68, 76, 99 );
+    color: rgb(68, 76, 99);
     line-height: 1.182;
-    vertical-align: middle;
 }
 
-.line-after-header-search-panel{
+.line-after-header-search-panel {
     background-color: #dadfea;
-    position: relative;
-    left: 0px;
-    height: 1px;
 }
 
-.header-search-panel-ul{
+.header-search-panel-ul {
+    display: flex;
     margin: 0;
     padding-left: 20px;
-    height: 50px;
     list-style: none;
     background-color: #eef1f7;
 }
 
 .header-search-panel-ul>li {
-    display: inline-block;
-    position: relative;
+    justify-content: flex-start;
+    white-space: nowrap
 }
 
-.filter-button, .filter-button-allbooks{
+.filter-button, .filter-button-allbooks {
     border: 0;
     padding-left: 15px;
     padding-right: 15px;
@@ -265,53 +259,49 @@
     margin-top: 12.5px;
     margin-bottom: 12.5px;
     font-size: 12px;
-    font-family: "Proxima Nova";;
+    font-family: "Proxima Nova";
     text-align: center;
     text-transform: capitalize;
     outline: none;
     border-radius: 20px;
 }
 
-.filter-button-allbooks{
+.filter-button-allbooks {
     background-color: #97b3ce;
     color: #ffffff;
 }
 
-.filter-button{
+.filter-button {
     background-color: transparent;
     color: #8c97b2;
 }
 
-.filter-button-allbooks:active{
+.filter-button-allbooks:active {
     background-color: #eef1f7;
     color: #97b3ce;
 }
 
-.filter-button:active{
+.filter-button:active {
     background-color: #97b3ce;
     color: #eef1f7;
 }
 
-.search-panel{
-    margin: 0 20px 0 0;
-    float: right;
-    width: auto
+.search-panel {
+    margin-left: auto;
 }
 
-.filter-search{
+.filter-search {
     height: 30px;
-    width: 380px;
-    padding:0 0 0 20px;
-    border: 1px solid #8c97b2 ;
+    padding: 0 0 0 20px;
+    border: 1px solid #8c97b2;
     outline: none;
     border-radius: 20px;
 }
 
-.filter-search-button{
+.filter-search-button {
+    position: relative;
+    right: 40px;
     height: 32px;
-    position: absolute;
-    top: 0;
-    right: 10px;
     background-color: transparent;
     color: #8c97b2;
     border: 0;
@@ -319,24 +309,22 @@
     cursor: pointer;
 }
 
-.filter-results{
-    height: 756px;
-    margin: 165px 0 45px 200px;
-    width: calc(1320px - 200px);
+.filter-results {
+    margin: 0 0 55px 200px;
     overflow-y: scroll;
 }
 
-.filter-results::-webkit-scrollbar{
+.filter-results::-webkit-scrollbar {
     background-color: transparent;
     width: 6px;
     border-radius: 6px;
 }
 
-.filter-results::-webkit-scrollbar-thumb{
-    background-color: rgb( 204, 213, 228 );
+.filter-results::-webkit-scrollbar-thumb {
+    background-color: rgb(204, 213, 228);
 }
 
-.filter-results-first-line th, .filter-results-second-line th{
+.filter-results-first-line th {
     display: inline-block;
     height: 350px;
     width: 200px;
@@ -344,13 +332,13 @@
     padding: 0;
 }
 
-.filter-results-first-line img, .filter-results-second-line img{
+.filter-results-first-line img {
     height: 275px;
     width: 100%;
     margin-bottom: 15px;
 }
 
-.book-name , .book-author, .raiting{
+.book-name, .book-author, .raiting {
     margin: 0;
 }
 
@@ -358,7 +346,7 @@
     height: 20px;
     font-size: 14px;
     font-family: "FontAwesome";
-    color: rgb( 255, 171, 0 );
+    color: rgb(255, 171, 0);
     line-height: 1.857;
     text-align: left;
 }
@@ -367,16 +355,16 @@
     height: 20px;
     font-size: 12px;
     font-family: "Proxima Nova";
-    color: rgb( 111, 125, 149 );
+    color: rgb(111, 125, 149);
     line-height: 2.167;
     text-align: left;
 }
-  
+
 .book-name {
     height: 20px;
     font-size: 16px;
     font-family: "Proxima Nova";
-    color: rgb( 68, 76, 99 );
+    color: rgb(68, 76, 99);
     line-height: 1.625;
     text-align: left;
 }

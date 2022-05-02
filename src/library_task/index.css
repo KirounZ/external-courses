@@ -3,12 +3,13 @@
   src: url(assets/fonts/FontAwesome.otf);
 }
 
-button{
+button {
   font-family: "FontAwesome";
 }
 
 body {
-  width: 1320px;
+  width: 100%;
+  min-width: 800px;
   margin: 0;
   padding: 0;
   position: relative;
@@ -16,8 +17,8 @@ body {
 }
 
 .main-header, .main-footer {
+  width: 100%;
   position: fixed;
-  width: 1320px;
   height: 45px;
   z-index: 1;
 }
@@ -26,7 +27,7 @@ body {
   top: 0;
   letter-spacing: 1px;
   color: #5c6479;
-  background-color: #2f3649; 
+  background-color: #2f3649;
 }
 
 .main-footer {
@@ -65,12 +66,12 @@ body {
   outline: none;
 }
 
-.header-button, .button-arrow{
+.header-button, .button-arrow {
   border: 0;
   background-color: transparent;
 }
 
-.header-button{
+.header-button {
   margin-right: 5px;
   margin-left: 15px;
   height: 45px;
@@ -78,10 +79,10 @@ body {
   font-family: "Proxima Nova";
 }
 
-.header-button:active{
+.header-button:active {
   color: #2f3649;
   background-color: #5c6479;
-} 
+}
 
 .main-header p {
   margin: 0;
@@ -114,7 +115,6 @@ body {
 .header-user {
   font-size: 13px;
   font-family: "Proxima Nova";
-  color: rgb( 255, 255, 255 );
   line-height: 2;
   text-align: left;
   padding: 15px;
@@ -122,18 +122,18 @@ body {
   text-decoration: none;
 }
 
-.button-arrow{
+.button-arrow {
   margin-right: 15px;
   vertical-align: middle;
   font-size: medium;
   color: #ffffff;
 }
 
-.button-arrow:active{
+.button-arrow:active {
   border-radius: 50%;
   color: #000000;
-  background-color: transparent; 
-} 
+  background-color: transparent;
+}
 
 .setting, .help {
   padding: 15px;
@@ -162,27 +162,27 @@ body {
   outline: none;
 }
 
-.footer-button-help, .footer-button-setting{
+.footer-button-help, .footer-button-setting {
   border: 0;
   background-color: transparent;
   height: 50px;
   color: #ffffff;
 }
 
-.footer-button-help{
+.footer-button-help {
   background-color: #1f2637;
 }
 
-.footer-button-setting{
+.footer-button-setting {
   background-color: #15a4fa;
 }
 
-.footer-button-help:active{
+.footer-button-help:active {
   color: #1f2637;
   background-color: #5c6479;
-} 
+}
 
-.footer-button-setting:active{
+.footer-button-setting:active {
   color: #1f2637;
   background-color: #5c6479;
-} 
+}
