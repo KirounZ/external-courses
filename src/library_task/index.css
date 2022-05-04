@@ -9,11 +9,12 @@ button {
 
 body {
   width: 100%;
-  min-width: 800px;
+  max-width: 100%;
   margin: 0;
   padding: 0;
   position: relative;
   font-family: "FontAwesome";
+  overflow-y: hidden;
 }
 
 .main-header, .main-footer {

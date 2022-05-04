@@ -3,27 +3,22 @@ const buttons = [
     icon: '',
     text: 'now reading',
   },
-
   {
     icon: '',
     text: 'browse',
   },
-
   {
     icon: '',
     text: 'buy books',
   },
-
   {
     icon: '',
     text: 'favouritte books',
   },
-
   {
     icon: '',
     text: 'wishlist',
   },
-
   {
     icon: '',
     text: 'history',
@@ -41,9 +36,6 @@ const booksbuttons = buttons.map(({
         </li>
   `);
 
-document.write(booksbuttons[0]);
-document.write(booksbuttons[1]);
-document.write(booksbuttons[2]);
-document.write(booksbuttons[3]);
-document.write(booksbuttons[4]);
-document.write(booksbuttons[5]);
+for (let i = 0; i < booksbuttons.length; i += 1) {
+  document.write(booksbuttons[i]);
+}
