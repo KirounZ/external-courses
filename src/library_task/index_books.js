@@ -1,4 +1,7 @@
 let i;
+const filter = document.getElementById('filter');
+const allBook = document.getElementById('allBooks');
+
 const books = [
   {
     img: 'assets/images/book-10.jpg',
@@ -65,7 +68,7 @@ const books = [
 const booksBlocks = books.map(({
   img, name, author, rating,
 }) => `<tr>
-        <th>
+        <th class="book-box">
           <img src=${img}>
           <p class="book-name">${name}</p>
           <p class="book-author">${author}</p>
@@ -84,7 +87,7 @@ for (i = 0; i < booksBlocks.length; i += 1) {
 const table = document.getElementById('filter-table');
 const tr = table.getElementsByTagName('tr');
 
-function filter() {
+filter.onclick = function filterBooks() {
   for (i = 0; i < tr.length; i += 1) {
     const rating = tr[i].getElementsByClassName('ratingNum')[0].value;
 
@@ -94,13 +97,13 @@ function filter() {
       tr[i].style.display = 'none';
     }
   }
-}
+};
 
-function allBooks() {
+allBook.onclick = function filterAllBooks() {
   for (i = 0; i < tr.length; i += 1) {
     tr[i].style.display = '';
   }
-}
+};
 
 function setRating() {
   for (i = 0; i < tr.length; i += 1) {
@@ -143,5 +146,3 @@ function setRating() {
 }
 
 setRating();
-filter();
-allBooks();

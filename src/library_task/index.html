@@ -7,10 +7,6 @@
     <title>My library</title>
     <link rel="stylesheet" href="index.css" />
     <link rel="stylesheet" href="index_1.css" />
-    <link rel="stylesheet" href="index_12ex.css" />
-    <script src="index_modal_window.js"></script>
-    <script src="index_search.js"></script>
-    <script src="index_raiting.js"></script>
   </head>
   <body onload="setRating()">
     <header class="main-header">
@@ -30,10 +26,11 @@
     <nav class="sidebar">
       <ul class="sidebar-addbook">
         <li>
-          <button onclick="openModal()" class="sidebar-button-addbook">
+          <button class="sidebar-button-addbook" id="addBookButton">
             
             <p>add a book</p>
           </button>
+          <script src="index_modal_window.js"></script>
         </li>
       </ul>
 
@@ -107,11 +104,11 @@
 
       <ul id="header-search" class="header-search-panel-ul">
         <li>
-          <button class="filter-button" onclick="allBooks()">all books</button>
+          <button class="filter-button" id="allBooks">all books</button>
         </li>
         <li><button class="filter-button">most recent</button></li>
         <li>
-          <button class="filter-button" onclick="filter()">most popular</button>
+          <button class="filter-button" id="filter">most popular</button>
         </li>
         <li><button class="filter-button">free books</button></li>
         <li class="search-panel">
@@ -120,11 +117,12 @@
             id="inputSearch"
             class="filter-search"
             placeholder="Enter Keywords"
-            onkeyup="search()"
           />
           <p class="filter-search-button"></p>
         </li>
       </ul>
+
+      <script src="index_search.js"></script>
 
       <div class="line-after-header-search-panel"></div>
     </nav>
@@ -134,33 +132,6 @@
         <script src="index_books.js"></script>
       </table>
     </main>
-
-    <div class="addBook" id="bookModal">
-      <div class="bookModal-window">
-        <input class="bookModal-window-input" type="text" placeholder="Title" />
-        <input
-          class="bookModal-window-input"
-          type="text"
-          placeholder="Author"
-        />
-        <input class="bookModal-window-input" type="file" placeholder="Image" />
-        <button onclick="closeModal()" class="bookModal-close">Close</button>
-      </div>
-    </div>
-
-    <div class="addRating" id="ratingModal">
-      <div class="ratingModal-window">
-        <input
-          class="ratingModal-window-input"
-          type="text"
-          placeholder="Оцените книгу от 1 до 10"
-          value="3"
-        />
-        <button onclick="closeRatingModal()" class="bookModal-close">
-          Close
-        </button>
-      </div>
-    </div>
 
     <footer class="main-footer">
       <nav class="main-footer-nav">
