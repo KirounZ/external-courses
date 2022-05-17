@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="index.css" />
     <link rel="stylesheet" href="index_1.css" />
   </head>
-  <body>
+  <body onload="setRating()">
     <header class="main-header">
       <nav class="main-header-nav">
         <ul class="main-header-nav-ul">
@@ -26,10 +26,11 @@
     <nav class="sidebar">
       <ul class="sidebar-addbook">
         <li>
-          <button class="sidebar-button-addbook">
+          <button class="sidebar-button-addbook" id="addBookButton">
             
             <p>add a book</p>
           </button>
+          <script src="index_modal_window.js"></script>
         </li>
       </ul>
 
@@ -101,31 +102,34 @@
 
       <div class="line-after-header-search-panel"></div>
 
-      <ul class="header-search-panel-ul">
-        <li><button class="filter-button-allbooks">all books</button></li>
+      <ul id="header-search" class="header-search-panel-ul">
+        <li>
+          <button class="filter-button" id="allBooks">all books</button>
+        </li>
         <li><button class="filter-button">most recent</button></li>
-        <li><button class="filter-button">most popular</button></li>
+        <li>
+          <button class="filter-button" id="filter">most popular</button>
+        </li>
         <li><button class="filter-button">free books</button></li>
         <li class="search-panel">
-          <form>
-            <input
-              type="text"
-              class="filter-search"
-              placeholder="Enter Keywords"
-            />
-            <button class="filter-search-button"></button>
-          </form>
+          <input
+            type="text"
+            id="inputSearch"
+            class="filter-search"
+            placeholder="Enter Keywords"
+          />
+          <p class="filter-search-button"></p>
         </li>
       </ul>
+
+      <script src="index_search.js"></script>
 
       <div class="line-after-header-search-panel"></div>
     </nav>
 
     <main class="filter-results">
-      <table class="filter-results-table">
-        <tr class="filter-results-first-line">
-          <script src="index_books.js"></script>
-        </tr>
+      <table class="filter-results-table" id="filter-table">
+        <script src="index_books.js"></script>
       </table>
     </main>
 
