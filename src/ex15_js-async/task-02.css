@@ -1,0 +1,22 @@
+.debounced, .regular {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.debounced p, .regular p {
+    margin: 0;
+    margin-right: 10px;
+    width: auto;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+input{
+    border: 2px solid #ccc;
+    outline: none;
+    font-size: 16px;
+}
+
+input:focus{
+    border: 2px solid rgb(61, 114, 194)
+}
