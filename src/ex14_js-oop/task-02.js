@@ -92,31 +92,4 @@ class Room {
   }
 }
 
-const kitchen = new Room('Кухня');
-const livingRoom = new Room('Гостинная');
-const bedRoom = new Room('Спальня');
-
-kitchen.addNewDevices('Стиральная машина', 1200);
-kitchen.allDeviceInRoom[0].powerOn();
-kitchen.addNewDevices('Холодильник', 700);
-kitchen.addNewDevices('СВЧ печь', 2200);
-kitchen.allDeviceInRoom[2].powerOn();
-
-livingRoom.addNewDevices('Телевизор', 600);
-livingRoom.addNewDevices('Колонки', 1200);
-livingRoom.allDeviceInRoom[1].powerOn();
-livingRoom.addNewDevices('Робот-пылесос', 800);
-livingRoom.addNewDevices('Игровая приставка', 400);
-
-bedRoom.addNewDevices('Ночник', 200);
-bedRoom.addNewDevices('Проектор', 1200);
-bedRoom.allDeviceInRoom[0].powerOn();
-bedRoom.allDeviceInRoom[1].powerOn();
-
-kitchen.powerCalculation();
-livingRoom.powerCalculation();
-bedRoom.powerCalculation();
-
-kitchen.searchDevice('Телевизор');
-livingRoom.searchDevice('Игровая приставка');
-bedRoom.searchDevice('Утюг');
+Room.addNewDevices();
